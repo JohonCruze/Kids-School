@@ -137,7 +137,7 @@ a.nav-link {
 
 .carriculam {
     margin: 80px 0;
-    background-image: url("/assets/bg.png");
+    background-image: url("../assets/bg.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
