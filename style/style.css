@@ -1,13 +1,208 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body{
+/* Colors Code */
+
+.orange {
+    color: #FEA301;
+}
+
+.sky-Blue {
+    color: #01ACFD;
+}
+
+.cyan {
+    color: #01ACFD;
+}
+
+.blue {
+    color: #5D58EF;
+}
+
+/* Button Color */
+
+.primary-btn {
+    background-color: #FEA301;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.secondary-btn {
+    background-color: #000000;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+body {
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-  }
+    width: 1440px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+/* Header Style Added */
+nav.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.nav-logo h3 {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+ul.nav-item {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+a.nav-link {
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+}
+
+/* Header Style Ended Here */
+
+/* Banner Section Style Started Here */
+
+.banner-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner-content {
+    max-width: 720px;
+}
+
+.banner-title {
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.banner-description {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.banner-image {
+    max-width: 720px;
+}
+
+
+.banner-image img {
+    width: 100%;
+}
+
+/* Banner Section Style Ended Here */
+
+.carriculam {
+    margin: 80px 0;
+    background-image: url("/assets/bg.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-title {
+    font-size: 45px;
+    line-height: 55px;
+    font-weight: 700;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.cariculam-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.single-cariculam-card {
+    max-width: 100%;
+    padding: 70px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 0 28.3px 0.94px rgba(0, 0, 0, 0.05);
+}
+
+.cyan-card {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 40%, rgba(222, 245, 255, 1) 100%);
+}
+
+
+.orange-card {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 40%, rgba(255, 244, 220, 1) 100%);
+}
+
+
+.blue-card {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 40%, rgba(242, 232, 255, 1) 100%);
+}
+
+.single-cariculam-card-img img {
+    max-width: 100px;
+    margin-bottom: 20px;
+}
+
+.single-cariculam-card-title {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.single-cariculam-card-description {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #808080;
+}
+
+.single-cariculam-card-button {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
