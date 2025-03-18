@@ -136,7 +136,7 @@ a.nav-link {
 /* Banner Section Style Ended Here */
 
 .carriculam {
-    margin: 80px 0;
+    padding: 80px 0;
     background-image: url("../assets/bg.png");
     background-position: center center;
     background-repeat: no-repeat;
@@ -206,3 +206,142 @@ a.nav-link {
     margin-bottom: 10px;
     text-decoration: none;
 }
+
+.arrow-button {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.left-arrow {
+    background-color: #FEA301;
+    width: 50px;
+    height: 50px;
+    padding: 18px;
+    border-radius: 80px;
+    cursor: pointer;
+
+}
+
+.right-arrow {
+    background-color: #FEA301;
+    width: 50px;
+    height: 50px;
+    padding: 18px;
+    border-radius: 80px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+
+/* Our Stories Style Starts Here */
+
+.stories-section {
+    /* margin-bottom: 80px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 30%, rgba(255, 244, 220, 1) 100%); */
+}
+
+.stories-card-container {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+
+.single-stories-card-left {
+    position: relative;
+    box-shadow: 0 0 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+    border-radius: 12px;
+    width: 720px;
+    height: 700px;
+}
+
+.single-stories-card-left-img img {
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+}
+
+.single-stories-card-left-content {
+    padding: 40px;
+}
+
+.single-stories-card-left-badge {
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #ffffff;
+    position: absolute;
+    bottom: 228px;
+    left: 40px;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+}
+.cyan-badge {
+    background-color: #3CD8E8;
+}
+.green-badge {
+    background-color: #95B226;
+}
+.blue-badge {
+    background-color: #5D58F0;
+}
+
+.single-stories-left-title {
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.single-stories-left-description {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #666666;
+}
+
+.stories-card-right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.single-stories-card-right {
+    position: relative;
+    box-shadow: 0 0 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+    border-radius: 12px;
+    max-width: 330px;
+    height: 340px;
+}
+
+.single-stories-card-right-img img {
+    border-radius: 12px 12px 0 0;
+    width: 100%;
+}
+
+.single-stories-card-right-badge {
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #ffffff;
+    position: absolute;
+    bottom: 114px;
+    left: 40px;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+}
+
+.single-stories-card-right-content {
+    padding: 40px;
+}
+
+.single-stories-right-title {
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* Our Stories Style Ends Here */
