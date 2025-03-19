@@ -60,6 +60,23 @@ body {
 }
 
 /* Header Style Added */
+
+.header-marquee {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.header-marquee marquee {
+    color: #333;
+    font-size: 18px;
+    padding: 10px 0;
+    font-weight: bold;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+}
+
 .nav-bar {
     max-width: 1440px;
     display: flex;
@@ -96,7 +113,7 @@ a.nav-link {
     font-weight: 600;
 }
 
-.hambarger-menu{
+.hambarger-menu img {
     display: none;
 }
 
@@ -179,6 +196,7 @@ a.nav-link {
 }
 
 .cyan-card {
+    border: 1px solid #DEF5FF;
     background: linear-gradient(0deg, rgba(255, 255, 255, 1) 40%, rgba(222, 245, 255, 1) 100%);
 }
 
@@ -189,6 +207,7 @@ a.nav-link {
 
 
 .blue-card {
+    border: 1px solid #F2E8FF;
     background: linear-gradient(0deg, rgba(255, 255, 255, 1) 40%, rgba(242, 232, 255, 1) 100%);
 }
 
@@ -462,12 +481,22 @@ a.nav-link {
     color: #ffffff;
 }
 
+.footer-social-icon img {
+    cursor: pointer;
+}
+
 /* Footer Style Ends Here */
 
 
-/* Responsive Media Quaries Style Starts Here */
+/* Responsive Media Quaries Mobile Device Style Starts Here */
 
 @media screen and (max-width: 576px) {
+
+    /* Header Section */
+
+    .header-marquee {
+        width: 470px;
+    }
 
     .nav-bar {
         margin: 0 15px;
@@ -489,12 +518,14 @@ a.nav-link {
         display: none;
     }
 
-    .hambarger-menu {
+    .hambarger-menu img {
         cursor: pointer;
         width: 45px;
         height: auto;
         display: block;
     }
+
+    /* Banner Section */
 
     .banner-section {
         margin: 0 15px;
@@ -518,6 +549,8 @@ a.nav-link {
         font-size: 30px;
         line-height: 40px;
     }
+
+    /* Curriculam Section */
 
     .carriculam {
         margin: 0 15px;
@@ -558,6 +591,8 @@ a.nav-link {
         padding: 10px;
         margin-left: 5px;
     }
+
+    /* Stories Section */
 
     .stories-section {
         padding-top: 30px;
@@ -620,6 +655,8 @@ a.nav-link {
         line-height: 26px;
     }
 
+    /* Footer Section */
+
     .footer-container {
         flex-direction: column;
         padding: 40px 0;
@@ -653,4 +690,327 @@ a.nav-link {
     }
 }
 
-/* Responsive Media Quaries Style Ends Here */
+/* Responsive Media Quaries Mobile Device Style Ends Here */
+
+
+/* Responsive Media Quaries Tablet Device Style Starts Here */
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+
+    .header-marquee {
+        width: 540px;
+    }
+
+    .nav-bar {
+        margin: 0 20px;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .nav-contact {
+        display: none;
+    }
+
+    .nav-logo img {
+        width: 80px;
+    }
+
+    .nav-logo h3 {
+        display: none;
+    }
+
+    .hambarger-menu img {
+        cursor: pointer;
+        height: auto;
+        display: block;
+        width: 80px;
+    }
+
+    /* Banner Section */
+    .banner-section {
+        margin: 0 20px;
+    }
+
+    .banner-container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .banner-image {
+        width: 100%;
+    }
+
+    .banner-image img {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .banner-title {
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .banner-description {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    /* Curriculam Section */
+
+    .carriculam {
+        margin: 0 20px;
+        padding-top: 50px;
+    }
+
+    .carriculam .section-title {
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 50px;
+    }
+
+    .cariculam-card {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+
+    }
+
+    .single-cariculam-card {
+        padding: 35px;
+    }
+
+    .single-cariculam-card-title {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .single-cariculam-card-description {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .arrow-button {
+        text-align: center;
+        margin-top: 30px;
+
+    }
+
+    .left-arrow,
+    .right-arrow {
+        width: 40px;
+        height: 40px;
+        padding: 12px;
+        margin-left: 5px;
+    }
+
+    /* Stories Section */
+
+    .stories-section {
+        padding: 50px 0;
+    }
+
+    .stories-card-left {
+        display: none;
+    }
+
+    .stories-card-right {
+        width: 100%;
+        margin: 0 20px;
+    }
+
+    .single-stories-card-right {
+        max-width: 470px;
+        height: 430px;
+    }
+
+    .stories-card-button {
+        padding-top: 50px;
+    }
+
+    /* Footer Section */
+    .footer-container {
+        padding: 50px 0;
+        margin: 0 20px;
+    }
+
+}
+
+/* Responsive Media Quaries Tablet Device Style Ends Here */
+
+/* Responsive Media Quaries Large Device Style Starts Here */
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+
+    /* Header Section */
+
+    .header-marquee {
+        width: 900px;
+    }
+
+
+    .nav-bar {
+        max-width: 1102px;
+        margin: 0 50px;
+    }
+
+    .hambarger-menu {
+        display: none;
+    }
+
+    /* Banner Section */
+
+    .banner-container {
+        max-width: 1102px;
+        margin: 0 50px;
+    }
+
+    .banner-title {
+        font-size: 50px;
+        line-height: 55px;
+        margin-bottom: 20px;
+    }
+
+    /* Carriculam Section */
+    .carriculam {
+        padding-top: 50px;
+    }
+
+    .carriculam-container {
+        max-width: 1102px;
+        margin: 0 50px;
+    }
+
+    .single-cariculam-card {
+        padding: 30px;
+    }
+
+    .arrow-button {
+        margin-top: 50px;
+    }
+
+    /* Stories Section */
+
+    .stories-section {
+        padding: 50px 0;
+    }
+
+    .stories-container {
+        max-width: 1102px;
+        margin: 0 50px;
+    }
+
+    .stories-card-container {
+        gap: 20px;
+    }
+
+    .single-stories-card-left-badge {
+        bottom: 298px;
+        left: 30px;
+    }
+
+    .single-stories-card-left {
+        width: 450px;
+        height: 600px;
+    }
+
+    .single-stories-card-right {
+        max-width: 330px;
+        height: 290px;
+    }
+
+    .single-stories-card-right-badge {
+        left: 20px;
+
+    }
+
+    .single-stories-card-right-content {
+        padding: 30px 20px;
+    }
+
+    .stories-card-button {
+        padding-top: 50px;
+    }
+
+    /* Footer Section */
+
+    .footer-container {
+        max-width: 1102px;
+        margin: 0 50px;
+    }
+}
+
+/* Responsive Media Quaries Large Device Style Ends Here */
+
+
+/* Responsive Media Quaries Extra-Large Device Style Starts Here */
+
+@media screen and (min-width: 1201px) and (max-width: 1440px) {
+
+    .header-marquee {
+        width: 1140px;
+    }
+
+    /* Header Section */
+    .hambarger-menu {
+        display: none;
+    }
+
+    .nav-bar {
+        width: 1140px;
+    }
+
+    /* Banner Section */
+
+    .banner-container {
+        max-width: 1140px;
+    }
+
+    /* Carriculam Section */
+
+    .carriculam-container {
+        max-width: 1140px;
+    }
+
+    /* stories-section */
+
+    .stories-container {
+        max-width: 1140px;
+    }
+
+    .single-stories-card-left {
+        width: 500px;
+        height: 660px;
+    }
+
+    .single-stories-card-left-badge {
+        bottom: 324px;
+        left: 40px;
+    }
+
+    .single-stories-card-right {
+        max-width: 300px;
+        height: 320px;
+    }
+
+    /* footer-section */
+
+    .footer-container {
+        max-width: 1140px;
+    }
+
+}
+
+/* Responsive Media Quaries Extra-large Device Style Ends Here */
+
+
+/* Responsive Media Quaries Extra-Extra-large Device Style Starts Here */
+
+@media screen and (min-width: 1441px) and (max-width: 1920px) {
+    .hambarger-menu {
+        display: none;
+    }
+
+}
+
+/* Responsive Media Quaries Extra-Extra-large Device Style Ends Here */
